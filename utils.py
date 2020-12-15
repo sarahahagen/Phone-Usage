@@ -2,7 +2,7 @@
 # Programmer: Sarah Hagen
 # Class: CPSC 222-01, Fall 2020
 # Final Project
-# 12/12/2020
+# 12/14/2020
 #
 # Description: This program computes mutliple aspects on a 
 #              CSV file using DataFrames and Series.
@@ -48,15 +48,6 @@ def column_slicing_by_date(start_date, end_date, col, df_name):
 
     return numeric_data_ser
 
-def clean_col(column_data_ser):
-    '''
-    Cleans marital status column
-    Parameter data: uses the marital status column for cleaning
-    Returns: the Series, cleaned
-    '''
-    
-    return column_data_ser
-
 def join(merge_on, df_name_1, df_name_2):
     '''
     Returns a data frame of two merged dataframes into a CSV file
@@ -64,6 +55,7 @@ def join(merge_on, df_name_1, df_name_2):
     Returns: a merged data frame
     '''
     merged_df = df_name_1.merge(df_name_2, on=merge_on)
+    merged_df.to_csv("merged_df.csv")
 
     return merged_df
 
