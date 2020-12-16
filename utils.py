@@ -2,7 +2,7 @@
 # Programmer: Sarah Hagen
 # Class: CPSC 222-01, Fall 2020
 # Final Project
-# 12/14/2020
+# 12/15/2020
 #
 # Description: This program computes mutliple aspects on a 
 #              CSV file using DataFrames and Series.
@@ -85,11 +85,36 @@ def compute_stats(column_data):
     median = column_data.median()
     median_rounded = round(median, 2)
     
-    # computing the range
-    #difference = largest - smallest
-    #difference_rounded = round(difference, 2)
-    
     return total, avg, std_dev, smallest_rounded, largest_rounded, median_rounded
+
+def print_stats_minutes(att, total, avg, std_dev, smallest, largest, median):
+    '''
+    Displays the statistics for minutes attribute in the Jupyter Notebook
+    Parameter data: all of the statistics computed
+    Returns: nothing
+    '''
+    print(att, "Total:", total, "minutes")
+    print(att, "Average:", avg, "minutes")
+    print(att, "Standard Deviation:", std_dev, "minutes")
+    print(att, "Least:", smallest, "minutes")
+    print(att, "Most:", largest, "minutes")
+    print(att, "Median:", median, "minutes")
+    print(att, "Range:", largest - smallest, "minutes")
+    
+def print_stats_times(att, total, avg, std_dev, smallest, largest, median):
+    '''
+    Displays the statistics for number of times attributes in the Jupyter Notebook
+    Parameter data: all of the statistics computed
+    Returns: nothing
+    '''
+    print(att, "Total:", total, "times")
+    print(att, "Average:", avg, "times")
+    print(att, "Standard Deviation:", std_dev, "times")
+    print(att, "Least:", smallest, "times")
+    print(att, "Most:", largest, "times")
+    print(att, "Median:", median, "times")
+    print(att, "Range:", largest - smallest, "times")
+
 
 def histogram(data, category, total, mean, std_dev, x_label):
     '''
