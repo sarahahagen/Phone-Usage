@@ -9,7 +9,7 @@ There are several different categories that "Screen Time" gives and I create cod
 To run the code:
 * an API key for IPGeolocation API may be needed toward the beginning, I hard coded mine into the implementation.
 
-Otherwise, it should run correctly when needed
+Otherwise, it should run correctly when needed.
 
 ## Organized
 The project is organized by the different topics within Data Science:
