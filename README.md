@@ -18,7 +18,6 @@ The project is organized by the different topics within Data Science:
   * Data Preparation
   * Exploratory Data Analysis
     * Visualizations
-    
   * Statistical Analysis
-  * Classification
-  * Conclusion
+* Classification
+* Conclusion
