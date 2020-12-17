@@ -19,5 +19,5 @@ The project is organized by the different topics within Data Science:
   * Exploratory Data Analysis
     * Visualizations
   * Statistical Analysis
-* Classification
+* Classification Results
 * Conclusion
