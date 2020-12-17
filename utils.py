@@ -33,21 +33,6 @@ def column_slicing(col, dataframe):
 
     return col_data_ser
 
-def column_slicing_by_date(start_date, end_date, col, df_name):
-    '''
-    Returns a Series from user-input from a column from the data frame name 
-    Parameter data: uses the start to end dates, the column name, and a data frame to create the Series
-    Returns: the Series of column with the selected dates
-    '''
-    # start to end date of the Data Frame
-    dates_df = df_name.loc[start_date: end_date]
-
-    # column name with the start to end date Data Frame
-    dates_column_ser = dates_df[col]
-    numeric_data_ser = pd.to_numeric(dates_column_ser)
-
-    return numeric_data_ser
-
 def join(merge_on, df_name_1, df_name_2):
     '''
     Returns a data frame of two merged dataframes into a CSV file
