@@ -1,7 +1,5 @@
 # Phone-Usage
-Final Project for CPSC 222 (Introduction to Data Science) at Gonzaga University
-
-how to run your project and how your project is organized.
+Final Project for CPSC 222 (Introduction to Data Science) at Gonzaga University for Fall Semester 2020
 
 ## Description
 The project is about my personal use of my iPhone via the Apple implemented "Screen Time" located in the "Settings" application provided by Apple.  
