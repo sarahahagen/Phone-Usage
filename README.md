@@ -7,7 +7,7 @@ There are several different categories that "Screen Time" gives and I create cod
 
 ## Running the Code
 To run the code:
-* an API key for IPGeolocation API may be needed toward the beginning, I hard coded mine into the implementation.
+* an API key for IPGeolocation API will be needed toward the beginning.
 
 Otherwise, it should run correctly when needed.
 
